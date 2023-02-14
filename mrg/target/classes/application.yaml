@@ -1,0 +1,24 @@
+server:
+  port: 9898
+spring:
+ datasource:
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/db1?serverTimezone=GMT%2b8
+  username: root
+  password: root
+mybatis:
+ mapper-locations: classpath:mapper/*.xml #扫描所有mybatis的文件xml文件
+ configuration:
+  log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#person1:
+#  name: zhangsan1
+#  age: 3
+#  happy: true
+#  birth: 2022/08/08
+#  maps: {k1: v1,k2: v2}
+#  lists:
+#    - code
+#    - girl
+#  dog:
+#    name: 旺财
+#    age: 5
